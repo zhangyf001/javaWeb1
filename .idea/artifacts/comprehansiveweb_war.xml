@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="comprehansiveweb:war">
+    <output-path>$PROJECT_DIR$/comprehansiveweb/target</output-path>
+    <root id="archive" name="comprehansive-web.war">
+      <element id="artifact" artifact-name="comprehansiveweb:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aj01/aj01.iml" filepath="$PROJECT_DIR$/aj01/aj01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aj02/aj02.iml" filepath="$PROJECT_DIR$/aj02/aj02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aj03/aj03.iml" filepath="$PROJECT_DIR$/aj03/aj03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aj04/aj04.iml" filepath="$PROJECT_DIR$/aj04/aj04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aj05/aj05.iml" filepath="$PROJECT_DIR$/aj05/aj05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comprehansiveweb/comprehansiveweb.iml" filepath="$PROJECT_DIR$/comprehansiveweb/comprehansiveweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbodemoapi/dubbodemoapi.iml" filepath="$PROJECT_DIR$/dubbodemoapi/dubbodemoapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbodemoconsumer/dubbodemoconsumer.iml" filepath="$PROJECT_DIR$/dubbodemoconsumer/dubbodemoconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbodemoparent/dubbodemoparent.iml" filepath="$PROJECT_DIR$/dubbodemoparent/dubbodemoparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbodemoprovider/dubbodemoprovider.iml" filepath="$PROJECT_DIR$/dubbodemoprovider/dubbodemoprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s00/j_s00.iml" filepath="$PROJECT_DIR$/j_s00/j_s00.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s01/j_s01.iml" filepath="$PROJECT_DIR$/j_s01/j_s01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s02/j_s02.iml" filepath="$PROJECT_DIR$/j_s02/j_s02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s03/j_s03.iml" filepath="$PROJECT_DIR$/j_s03/j_s03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s04/j_s04.iml" filepath="$PROJECT_DIR$/j_s04/j_s04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s05/j_s05.iml" filepath="$PROJECT_DIR$/j_s05/j_s05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j_s06/j_s06.iml" filepath="$PROJECT_DIR$/j_s06/j_s06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms01/ms01.iml" filepath="$PROJECT_DIR$/ms01/ms01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms02/ms02.iml" filepath="$PROJECT_DIR$/ms02/ms02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s01/s01.iml" filepath="$PROJECT_DIR$/s01/s01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s02/s02.iml" filepath="$PROJECT_DIR$/s02/s02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s03/s03.iml" filepath="$PROJECT_DIR$/s03/s03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s04/s04.iml" filepath="$PROJECT_DIR$/s04/s04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s05/s05.iml" filepath="$PROJECT_DIR$/s05/s05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro1/shiro1.iml" filepath="$PROJECT_DIR$/shiro1/shiro1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro2/shiro2.iml" filepath="$PROJECT_DIR$/shiro2/shiro2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm01/sm01.iml" filepath="$PROJECT_DIR$/sm01/sm01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm02/sm02.iml" filepath="$PROJECT_DIR$/sm02/sm02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm03/sm03.iml" filepath="$PROJECT_DIR$/sm03/sm03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm04/sm04.iml" filepath="$PROJECT_DIR$/sm04/sm04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm05/sm05.iml" filepath="$PROJECT_DIR$/sm05/sm05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboothello/springboothello.iml" filepath="$PROJECT_DIR$/springboothello/springboothello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/verification_code/verification_code.iml" filepath="$PROJECT_DIR$/verification_code/verification_code.iml" />
+    </modules>
+  </component>
+</project>

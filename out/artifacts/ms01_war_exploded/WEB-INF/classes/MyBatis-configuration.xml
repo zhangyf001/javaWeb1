@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases >
+		<!-- 为了在映射文件中可以不写映射类全路径，此处这么配置 -->
+		<typeAlias alias="User"  type="entity.User"/>
+		<!--或者 干脆这么配置也可以 即：<package name="entity"/>  -->
+	</typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/ms?characterEncoding=utf8"/>
+                <property name="username" value="root" />
+                <property name="password" value="root" />
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="dao/UserDao.xml"/>
+    </mappers>
+</configuration>

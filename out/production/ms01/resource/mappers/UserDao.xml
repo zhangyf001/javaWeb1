@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 这里对应的是dao包下面的UserDao接口 -->
+<mapper namespace="dao.UserDao">
+		
+		<!-- 这里的出参 不用写全路径:entity.User，因为在MyBatis-configuration.xml文件中有配置 -->
+	 <select id="queryUserById" parameterType="int" resultMap="UserMap111">
+	 	select * from user where t_id=#{id}<!--#{id}对应类属性-->
+	 </select> 
+	 <!--  若数据表字段名与类属性名不一样 则需要这样把数据表中的字段名重命名为与类属性一样的名字： -->
+	 <select id="queryUserById111" parameterType="int" resultMap="UserMap111">
+	 	select * from user where t_id=#{id}
+	 </select>
+	<!--自定义返回结果集-->
+	 <resultMap type="User" id="UserMap111">
+	 	<id property="id" column="t_id"/>
+	 	<result property="name" column="t_name"/>
+	 	<result property="pwd" column="t_pwd"/>
+	 	<result property="sex" column="t_sex"/>
+	 </resultMap>
+	 
+	 <!-- 这条SQL语句，虽然接口中返回类型是int但是这里无需出参 前面的user(name,pwd,sex)对应数据表中的字段，后面对应类属性 -->
+	 <insert id="add" parameterType="User">
+	 	insert into user(t_name,t_pwd,t_sex) values(#{name},#{pwd},#{sex})
+	 </insert>
+
+	 <select id="queryCounts" resultType="int">
+	 	select count(*) from user
+	 </select>
+	 
+	 <delete id="delete" parameterType="String" >
+	 	delete from user where name=#{name}
+	 </delete>
+	 	
+	 <update id="update" parameterType="User">
+	 	update user set name=#{name},pwd=#{pwd},sex=#{sex} where id=#{id}
+	 </update>
+	 
+	 <select id="queryAll" resultType="User">
+	 	select * from user
+	 </select>
+	 
+	 <select id="queryByName" parameterType="String" resultType="User">
+	 	select * from user where name=#{name }
+	 </select>
+</mapper>

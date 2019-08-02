@@ -1,0 +1,7 @@
+3.	JavaBean组件
+
+3.1	Javabean组件引入
+3.2	jsp:useBean创建 javabean
+3.3	jsp:setProperty 设置 javabean 属性值
+3.4	jsp:getProperty 获取 javabean 属性值
+3.5	javabean 删除

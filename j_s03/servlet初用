@@ -1,0 +1,8 @@
+1 helloWorld
+
+2 servlet生命周期
+servlet类加载—>实例化—>服务—>销毁。
+加载–>init()—>service()–>destroy()
+Init()只会执行一次
+
+3 转发和重定向

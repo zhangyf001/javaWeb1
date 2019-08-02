@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="userDaoImpl" class="dao.impl.UserDaoImpl"></bean>
+	<bean id="userBizImpl" class="biz.impl.UserBizImpl" scope="singleton">
+		<!-- 依赖注入方式一：属性注入 -->
+		<!-- 注入UserBizImpl的属性bName -->
+		<property name="bName" value="bName1"></property>
+		<property name="bNum" value="1"></property>
+		<!-- 在UserBizImpl中注入userDao(是一个bean),ref 关联上文中的id="userDaoImpl"的bean -->
+		<property name="userDao" ref="userDaoImpl"></property>
+	</bean>
+	<!-- scope属性表示bean的作用域 不写默认是单例模式singleton，每次实例化bean都是同一个bean
+		prototype多例 每次实例化bean都是新的，
+		request 每次请求时实例化bean是新的
+		session 浏览器打开关闭之间实例化bean是新的
+		global session 相当于 application 服务器打开关闭之间实例化bean是新的
+		  -->
+	<!-- 依赖注入方式二：构造函数注入-通过类型(类那边有构造) -->
+	<bean id="userBizImpl2" class="biz.impl.UserBizImpl" scope="singleton" lazy-init="true">
+		<constructor-arg type="java.lang.String" value="3dcas"></constructor-arg>
+		<constructor-arg type="int" value="2"></constructor-arg>
+		<!--  封装类的构造注入不对
+			<constructor-arg type="userDaoImpl" value="userdaoimpl"></constructor-arg>
+		-->
+	</bean>
+	<!-- 依赖注入方式二：构造函数注入-通过索引(类那边有构造) -->
+	<bean id="userBizImpl3" class="biz.impl.UserBizImpl" scope="singleton">
+		<constructor-arg index="0" value="bName3"></constructor-arg>
+		<constructor-arg index="1" value="3"></constructor-arg>
+		<constructor-arg index="2" ref="userDaoImpl"></constructor-arg>
+	</bean>
+	
+	<!-- 依赖注入方式二：构造函数注入-也可以联合使用索引和类型(类那边有构造) -->
+	<bean id="userBizImpl4" class="biz.impl.UserBizImpl" scope="singleton">
+		<constructor-arg index="0" type="java.lang.String" value="bName4"></constructor-arg>
+		<constructor-arg index="1" type="int" value="4"></constructor-arg>
+	</bean>
+	<!-- 依赖注入方式三：工厂方法（静态工厂、非静态工厂）  略  还得新建工厂类  略略略！-->
+	
+	
+	<!--======================================集合的注入 例子========================================================= 
+		
+		<bean id="people6" class="entity.People">
+		<property name="id" value="1"></property>
+		<property name="name" value="张三"></property>
+		<property name="hobbies">  类那边 需 new一个 ArrayList
+			<list>
+				<value>唱歌</value>
+				<value>跳舞</value>
+			</list>
+		</property>
+		<property name="loves">		类那边 需 new一个 HashSet
+			<set>
+				<value>唱歌2</value>
+				<value>跳舞2</value>
+			</set>
+		</property>
+		<property name="works">		类那边 需 new一个 HashMap
+			<map>
+				<entry>
+					<key><value>上午</value></key>
+					<value>写代码</value>
+				</entry>
+				<entry>
+					<key><value>下午</value></key>
+					<value>测试代码</value>
+				</entry>
+			</map>
+		</property>
+		<property name="addresses">		类那边 需 new一个 Properties
+			<props>
+				<prop key="address1">aaaaa</prop>
+				<prop key="address2">bbbbb</prop>
+			</props>
+		</property>
+	</bean>
+	 -->
+</beans>

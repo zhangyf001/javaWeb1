@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://www.java1234.com/jquery-easyui-1.3.3/jquery.min.js"></script>
+<script >
+	function show(){
+		$.post("ajax/hello",{"name":"zs","pwd":"123"},function(result){
+			alert(result);
+		});
+	} 
+
+</script>
+</head>
+<body>
+<button onclick="show()">点我，执行ajax请求</button>
+<a href="/springboot-hello/path/22">pathvariable</a>
+<a href="/springboot-hello/path/query?q=1234">搜索</a>
+</body>
+</html>

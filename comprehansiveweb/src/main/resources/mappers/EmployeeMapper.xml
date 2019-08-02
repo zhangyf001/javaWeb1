@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyf.shiro.dao.EmployeeMapper"><!-- 写对应类名全路径 -->
+
+	
+	<select id="queryAllEmployee" resultMap="employeeMap">
+		select employee_id,employee_name,b.type_name employee_part,b.type_id part_id,
+		c.type_name employee_level,c.type_id level_id,employee_phone from employee a, 
+		type b,type c where a.employee_part=b.type_id and a.employee_level=c.type_id 
+	</select>
+	
+	<resultMap type="Employee" id="employeeMap">
+		<id property="employeeId" column="employee_id" />
+		<result property="employeeName" column="employee_name" />
+		<result property="employeePhone" column="employee_phone" />
+		<!--多个员工对应一个部门-->
+		<association property="employeePart" javaType="Type">
+			<result property="typeId" column="part_id" />
+			<result property="typeName" column="employee_part" />
+		</association>
+		<!--多个员工对应一个级别-->
+		<association property="employeeLevel" javaType="Type">
+			<result property="typeId" column="level_id" />
+			<result property="typeName" column="employee_level" />
+		</association>
+
+	</resultMap>
+	<!-- 分页查询和总条数查询共用的条件 -->
+	<sql id="queryCommonCondition">
+		<if test="employeeName!=null and employeeName!=''">
+			and a.employee_name like '%${employeeName}%'
+		</if>
+
+		<if test="levelCode!=null and levelCode!=0">
+			and a.employee_level=#{levelCode}
+		</if>
+		<if test="partCode!=null and partCode!=0">
+			and a.employee_part=#{partCode}
+		</if>
+
+
+	</sql>
+	
+	<!-- 分页查询 -->
+	<select id="queryByQueryEmployee" parameterType="QueryEmployee" resultMap="employeeMap">
+	select employee_id,employee_name,b.type_name as employee_part,c.type_name as employee_level,
+	employee_phone from employee a, type b,type c
+	where a.employee_part=b.type_id and a.employee_level=c.type_id
+	<include refid="queryCommonCondition"></include>
+	<if test="start!=null">
+		limit #{start} , #{rows}
+		</if>
+	</select>
+	<select id="queryByParams" parameterType="java.util.Map" resultMap="employeeMap">
+		select employee_id,employee_name,b.type_name as employee_part,c.type_name as employee_level,
+	employee_phone from employee a, type b,type c
+	where a.employee_part=b.type_id and a.employee_level=c.type_id<include refid="queryCommonCondition"></include>
+	</select>
+	<select id="queryCountsByQueryEmployee" parameterType="QueryEmployee" resultType="int">
+		select count(*) from employee a, type b,type c where a.employee_part=b.type_id and a.employee_level=c.type_id
+	<include refid="queryCommonCondition"></include>
+	</select>
+	<delete id="deleteById" parameterType="int">
+		delete from employee where employee_id=#{employeeId}
+	</delete>
+	<select id="queryById" parameterType="int" resultMap="employeeMap">
+		select employee_id,employee_name,b.type_name employee_part,b.type_id part_id,
+		c.type_name employee_level,c.type_id level_id,employee_phone from employee a, 
+		type b,type c where a.employee_part=b.type_id and a.employee_level=c.type_id 
+		and employee_id=#{employeeId}
+	</select>
+	<update id="updateEmployee" parameterType="Employee">
+		update employee set employee_name=#{employeeName},employee_part=#{employeePart.typeId},
+		employee_level=#{employeeLevel.typeId},employee_phone=#{employeePhone}
+		 where employee_id=#{employeeId}
+	</update>
+</mapper>

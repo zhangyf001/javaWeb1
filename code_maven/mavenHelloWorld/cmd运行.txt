@@ -1,0 +1,8 @@
+--win + R
+cmd
+
+(打开d盘)输入d:
+回车
+(到mavenHelloWorld这个目录)输入cd mavenHelloWorld 回车
+（再到项目目录）输入cd  helloWorld 回车
+（编译）输入 mvn compile

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 这里对应的是dao包下面的UserDao接口 -->
+<mapper namespace="dao.ClassDao">
+	<!-- 虽然多个班级对应一个老师 但是SQL语句很灵活，可以只查询班级 -->
+	<select id="queryClassById" parameterType="int" resultMap="classMap">
+		select * from class where class_id=#{classId}
+	</select>
+	<resultMap type="MyClass" id="classMap">
+		<id property="classId" column="class_id"/>
+		<result property="className" column="class_name"/>
+	</resultMap>
+	
+	<!-- 当然，也可以查询班级时候把班级对应的老师信息一块查出来,这就是mybatis的灵活之处 -->
+	<select id="queryClassTeacherById" parameterType="int" resultMap="classTeacherMap">
+		select * from class a,teacher b where a.teacher_id=b.teacher_id and a.class_id=#{classId}
+	</select>
+	<resultMap type="MyClass" id="classTeacherMap">
+		<id property="classId" column="class_id"/>
+		<result property="className" column="class_name"/>
+		<association property="teacher" javaType="Teacher"><!-- 多个班级对应一个老师 -->
+			<id property="teacherId" column="teacher_id"/>
+			<result property="teacherName" column="teacher_name"/>
+		</association>
+	</resultMap>
+	
+	<select id="queryClassStudentById" parameterType="int" resultMap="classStudentMap">
+		select * from class a,student b where a.class_id=b.class_id and a.class_id=#{classId}
+	</select>
+	<resultMap type="MyClass" id="classStudentMap">
+		<id property="classId" column="class_id"/>
+		<result property="className" column="class_name"/>
+		<collection property="studentList"  ofType="Student"><!-- 一个班级对应多个学生 -->
+			<id property="studentId" column="student_id"/>
+			<result property="studentName" column="student_name"/>
+			<result property="classId" column="class_id"/>
+		</collection>
+	</resultMap>
+	
+	<!--  关联三张表：class  teacher student  -->
+	<select id="queryClassTeacherStudentById" parameterType="int" resultMap="classTeacherStudentMap">
+		select * from class a,teacher b,student c where a.teacher_id=b.teacher_id and a.class_id=c.class_id 
+		and a.class_id=#{classId}
+	</select>
+	<resultMap type="MyClass" id="classTeacherStudentMap">
+		<id property="classId" column="class_id"/>
+		<result property="className" column="class_name"/>
+		<association property="teacher" javaType="Teacher"><!-- 多个班级对应一个老师 -->
+			<id property="teacherId" column="teacher_id"/>
+			<result property="teacherName" column="teacher_name"/>
+		</association>
+		<collection property="studentList"  ofType="Student"><!-- 一个班级对应多个学生 -->
+			<id property="studentId" column="student_id"/>
+			<result property="studentName" column="student_name"/>
+			<result property="classId" column="class_id"/>
+		</collection>
+	
+	</resultMap>
+</mapper>

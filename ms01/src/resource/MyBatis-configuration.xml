@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+     <!-- 这样引入外部配置文件 -->
+     <!--<properties resource="mysql.properties"></properties>-->
+
+    <!--命名类型-->
+    <typeAliases >
+		<!-- 为了在映射文件中可以不写映射类全路径，此处这么配置 -->
+		<typeAlias alias="User"  type="entity.User"/>
+		<!--或者 干脆这么配置也可以 即：<package name="entity"/>  -->
+	</typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <!-- mybatis提供了3种数据源类型，分别是：POOLED,UNPOOLED,JNDI -->
+            <!-- POOLED 表示支持JDBC数据源连接池 -->
+            <!-- UNPOOLED 表示不支持数据源连接池 -->
+            <!-- JNDI 表示支持外部数据源连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/ms?characterEncoding=utf8"/>
+                <property name="username" value="root" />
+                <property name="password" value="root" />
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="resource/mappers/UserDao.xml"/>
+    </mappers>
+</configuration>
