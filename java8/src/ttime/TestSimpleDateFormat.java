@@ -6,6 +6,7 @@ import java.util.function.Supplier;
 public class TestSimpleDateFormat {
 
 	public static void main(String[] args) throws Exception {
+		//提交测试
         Comparator<Integer> com = (a, b) -> {
             //System.out.println("aaa");
             int c = Integer.compare(a, b);
