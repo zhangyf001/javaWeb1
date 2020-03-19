@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/comprehansiveweb" />
+    <file type="web" url="file://$PROJECT_DIR$/redis01" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,10 +19,25 @@
         <option value="$PROJECT_DIR$/dubbodemoconsumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbodemoapi/pom.xml" />
         <option value="$PROJECT_DIR$/dubbodemoparent/pom.xml" />
+        <option value="$PROJECT_DIR$/redis01/pom.xml" />
+        <option value="$PROJECT_DIR$/springCloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudParent/pom.xml" />
+        <option value="$PROJECT_DIR$/test1/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudCommon/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudStudentProvider1008/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudStudentConsumer80/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudEureka2001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudEureka2002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudEureka2003/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudStudentProvider1009/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudStudentProvider1007/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
   </component>
 </project>

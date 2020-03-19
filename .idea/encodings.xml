@@ -3,10 +3,32 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/aj01/src/action/GetAjaxNameServlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/comprehansiveweb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comprehansiveweb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comprehansiveweb/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbodemoconsumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbodemoconsumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbodemoparent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbodemoparent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbodemoprovider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbodemoprovider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbodemoprovider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboothello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboothello/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudCommon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudCommon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudEureka2001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudEureka2001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudEureka2002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudEureka2003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentConsumer80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentConsumer80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentProvider1007/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentProvider1008/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentProvider1008/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudStudentProvider1009/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

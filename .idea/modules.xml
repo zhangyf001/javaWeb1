@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms01/ms01.iml" filepath="$PROJECT_DIR$/ms01/ms01.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms02/ms02.iml" filepath="$PROJECT_DIR$/ms02/ms02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis01/redis01.iml" filepath="$PROJECT_DIR$/redis01/redis01.iml" />
       <module fileurl="file://$PROJECT_DIR$/s01/s01.iml" filepath="$PROJECT_DIR$/s01/s01.iml" />
       <module fileurl="file://$PROJECT_DIR$/s02/s02.iml" filepath="$PROJECT_DIR$/s02/s02.iml" />
       <module fileurl="file://$PROJECT_DIR$/s03/s03.iml" filepath="$PROJECT_DIR$/s03/s03.iml" />
@@ -35,6 +36,15 @@
       <module fileurl="file://$PROJECT_DIR$/sm04/sm04.iml" filepath="$PROJECT_DIR$/sm04/sm04.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm05/sm05.iml" filepath="$PROJECT_DIR$/sm05/sm05.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboothello/springboothello.iml" filepath="$PROJECT_DIR$/springboothello/springboothello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudCommon/springcloudCommon.iml" filepath="$PROJECT_DIR$/springcloudCommon/springcloudCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudEureka2001/springcloudEureka2001.iml" filepath="$PROJECT_DIR$/springcloudEureka2001/springcloudEureka2001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudEureka2002/springcloudEureka2002.iml" filepath="$PROJECT_DIR$/springcloudEureka2002/springcloudEureka2002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudEureka2003/springcloudEureka2003.iml" filepath="$PROJECT_DIR$/springcloudEureka2003/springcloudEureka2003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudParent/springcloudParent.iml" filepath="$PROJECT_DIR$/springcloudParent/springcloudParent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudStudentConsumer80/springcloudStudentConsumer80.iml" filepath="$PROJECT_DIR$/springcloudStudentConsumer80/springcloudStudentConsumer80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudStudentProvider1007/springcloudStudentProvider1007.iml" filepath="$PROJECT_DIR$/springcloudStudentProvider1007/springcloudStudentProvider1007.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudStudentProvider1008/springcloudStudentProvider1008.iml" filepath="$PROJECT_DIR$/springcloudStudentProvider1008/springcloudStudentProvider1008.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudStudentProvider1009/springcloudStudentProvider1009.iml" filepath="$PROJECT_DIR$/springcloudStudentProvider1009/springcloudStudentProvider1009.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/verification_code/verification_code.iml" filepath="$PROJECT_DIR$/verification_code/verification_code.iml" />
     </modules>

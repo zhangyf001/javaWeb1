@@ -6,12 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="comprehansiveweb" />
-        <module name="dubbodemoapi" />
-        <module name="dubbodemoconsumer" />
         <module name="dubbodemoparent" />
-        <module name="dubbodemoprovider" />
         <module name="springboothello" />
+        <module name="dubbodemoapi" />
+        <module name="comprehansiveweb" />
+        <module name="springcloudStudentConsumer80" />
+        <module name="dubbodemoconsumer" />
+        <module name="springcloudEureka2001" />
+        <module name="springcloudCommon" />
+        <module name="springcloudEureka2003" />
+        <module name="springcloudEureka2002" />
+        <module name="springcloudStudentProvider1009" />
+        <module name="springcloudStudentProvider1008" />
+        <module name="springcloudStudentProvider1007" />
+        <module name="redis01" />
+        <module name="dubbodemoprovider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -20,7 +29,19 @@
       <module name="dubbodemoconsumer" target="1.8" />
       <module name="dubbodemoparent" target="1.8" />
       <module name="dubbodemoprovider" target="1.8" />
+      <module name="redis01" target="1.8" />
       <module name="springboothello" target="1.8" />
+      <module name="springCloud-parent" target="1.8" />
+      <module name="springcloudCommon" target="1.8" />
+      <module name="springcloudEureka2001" target="1.8" />
+      <module name="springcloudEureka2002" target="1.8" />
+      <module name="springcloudEureka2003" target="1.8" />
+      <module name="springcloudParent" target="1.8" />
+      <module name="springcloudStudentConsumer80" target="1.8" />
+      <module name="springcloudStudentProvider1007" target="1.8" />
+      <module name="springcloudStudentProvider1008" target="1.8" />
+      <module name="springcloudStudentProvider1009" target="1.8" />
+      <module name="test1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
