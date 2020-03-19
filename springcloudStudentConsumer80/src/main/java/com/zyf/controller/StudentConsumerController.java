@@ -20,8 +20,9 @@ public class StudentConsumerController {
 	@Resource
 	private RestTemplate restTemplate;
 	
-	private final static String PRE_HOST="http://localhost:1008";
-	
+	//private final static String PRE_HOST="http://localhost:1008";
+	private final static String PRE_HOST="http://SPRINGCLUD-STUDENT:1008";
+
 	/**
      * 添加或者修改学生信息
      * @param student
