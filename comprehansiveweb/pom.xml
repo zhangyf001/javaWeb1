@@ -48,7 +48,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.24</version>
+      <version>8.0.28</version>
     <!--spring相关支持-->
     </dependency>
       <dependency>
